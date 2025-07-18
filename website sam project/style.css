@@ -1,0 +1,134 @@
+/* Reset some default styles */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body, input, textarea, button {
+font-family: 'Segoe UI', Arial, sans-serif;
+}
+body {
+background: #f9f9f9;
+color: #222;
+}
+header {
+background: #2d5be3;
+color: #fff;
+padding: 20px 0;
+}
+header .container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+nav a {
+color: #fff;
+margin-left: 20px;
+text-decoration: none;
+font-weight: 500;
+transition: color 0.2s;
+}
+nav a:hover {
+color: #ffcc00;
+}
+.container {
+width: 90%;
+max-width: 1100px;
+margin: 0 auto;
+}
+.hero {
+background: linear-gradient(rgba(45,91,227,0.7), rgba(45,91,227,0.7)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1100&q=80');
+color: #fff;
+padding: 80px 0 60px 0;
+text-align: center;
+}
+.hero h2 {
+font-size: 2.5rem;
+margin-bottom: 20px;
+}
+.hero p {
+font-size: 1.2rem;
+margin-bottom: 30px;
+}
+.btn {
+background: #ffcc00;
+color: #222;
+padding: 12px 28px;
+border: none;
+border-radius: 25px;
+font-size: 1rem;
+
+font-weight: bold;
+cursor: pointer;
+text-decoration: none;
+transition: background 0.2s;
+}
+.btn:hover {
+background: #ffd84d;
+}
+.services, .about, .contact {
+padding: 60px 0;
+}
+h2 {
+text-align: center;
+margin-bottom: 40px;
+color: #2d5be3;
+}
+.service-list {
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+justify-content: center;
+}
+.service {
+background: #fff;
+padding: 30px 20px;
+border-radius: 12px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+width: 300px;
+text-align: center;
+}
+.about p {
+max-width: 700px;
+margin: 0 auto;
+font-size: 1.1rem;
+text-align: center;
+}
+.contact form {
+max-width: 400px;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+input, textarea {
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 6px;
+font-size: 1rem;
+
+}
+textarea {
+min-height: 80px;
+resize: vertical;
+}
+#formMessage {
+margin-top: 10px;
+font-weight: bold;
+color: #2d5be3;
+}
+footer {
+background: #222;
+color: #fff;
+text-align: center;
+padding: 18px 0;
+margin-top: 30px;
+font-size: 0.95rem;
+}
+/* Responsive */
+@media (max-width: 900px) {
+.service-list {
+flex-direction: column;
+align-items: center;
+}
+}
